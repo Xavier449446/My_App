@@ -1,0 +1,31 @@
+{% load static %}
+<html>
+<head>
+<link rel=stylesheet href="{% static 'css/views.css' %}" type="text/css">
+{% block style_title %}
+{% endblock style_title %}
+</head>
+
+<body>
+
+<header class="header">
+
+<img src="{% static 'images/logo.jpeg' %}">
+
+<div class="menu_bar">
+<nav>
+<a href="" id="current_page">Home</a>
+<a href="events.html">Events</a>
+<a href="discussion.html">Discussion</a>
+<a href="profile.html">Profile</a>
+</nav>
+</div>
+</header>
+
+{% block content %}
+{% endblock content %}
+
+</body>
+
+
+</html>
